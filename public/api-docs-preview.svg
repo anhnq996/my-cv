@@ -1,0 +1,60 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="28" fill="#F8FAFC"/>
+  <rect x="0" y="0" width="250" height="720" fill="#FFFFFF"/>
+  <path d="M250 0V720" stroke="#E2E8F0"/>
+  <rect x="28" y="32" width="42" height="42" rx="12" fill="url(#accent)"/>
+  <path d="M52 43L43 52H55L46 63" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="82" y="52" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700" fill="#020617">API Docs</text>
+  <text x="82" y="72" font-family="Inter, Arial, sans-serif" font-size="12" fill="#64748B">v2.4.1</text>
+  <rect x="28" y="112" width="194" height="36" rx="9" fill="#F8FAFC" stroke="#E2E8F0"/>
+  <text x="58" y="135" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748B">Tìm endpoint...</text>
+  <text x="28" y="192" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">AUTHENTICATION</text>
+  <rect x="20" y="210" width="218" height="42" rx="10" fill="#F1F5F9"/>
+  <rect x="36" y="222" width="44" height="20" rx="5" fill="#E0F2FE" stroke="#7DD3FC"/>
+  <text x="47" y="236" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#0284C7">POST</text>
+  <text x="92" y="237" font-family="JetBrains Mono, Consolas, monospace" font-size="15" fill="#020617">/auth/login</text>
+  <rect x="36" y="270" width="44" height="20" rx="5" fill="#E0F2FE" stroke="#7DD3FC"/>
+  <text x="47" y="284" font-family="JetBrains Mono, Consolas, monospace" font-size="10" font-weight="700" fill="#0284C7">POST</text>
+  <text x="92" y="285" font-family="JetBrains Mono, Consolas, monospace" font-size="15" fill="#020617">/auth/refresh</text>
+  <text x="28" y="352" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">USERS</text>
+  <text x="28" y="392" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">PRODUCTS</text>
+  <text x="28" y="432" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">ORDERS</text>
+  <text x="28" y="472" font-family="Inter, Arial, sans-serif" font-size="12" font-weight="700" fill="#64748B">WEBHOOKS</text>
+  <text x="286" y="92" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748B">Nebula Commerce API</text>
+  <text x="286" y="142" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="800" fill="#020617">Đăng nhập người dùng</text>
+  <text x="286" y="182" font-family="Inter, Arial, sans-serif" font-size="17" fill="#64748B">Xác thực email/password, trả về access token và refresh token.</text>
+  <rect x="286" y="214" width="840" height="74" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="310" y="238" width="62" height="28" rx="5" fill="#E0F2FE" stroke="#7DD3FC"/>
+  <text x="329" y="257" font-family="JetBrains Mono, Consolas, monospace" font-size="12" font-weight="800" fill="#0284C7">POST</text>
+  <text x="396" y="258" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#64748B">https://api.nebula.dev/v2</text>
+  <text x="610" y="258" font-family="JetBrains Mono, Consolas, monospace" font-size="16" fill="#020617">/auth/login</text>
+  <rect x="1036" y="232" width="70" height="40" rx="9" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <text x="1062" y="257" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#020617">Run</text>
+  <text x="286" y="346" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#020617">Headers</text>
+  <rect x="286" y="374" width="840" height="112" rx="14" fill="#FFFFFF" stroke="#E2E8F0"/>
+  <rect x="286" y="374" width="840" height="40" rx="14" fill="#F1F5F9"/>
+  <path d="M286 414H1126" stroke="#E2E8F0"/>
+  <text x="310" y="399" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#64748B">Tên</text>
+  <text x="500" y="399" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#64748B">Kiểu</text>
+  <text x="644" y="399" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700" fill="#64748B">Bắt buộc</text>
+  <text x="310" y="448" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#020617">Content-Type</text>
+  <text x="500" y="448" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#475569">string</text>
+  <text x="644" y="448" font-family="Inter, Arial, sans-serif" font-size="13" fill="#F43F5E">required</text>
+  <text x="310" y="476" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#020617">X-Client-Id</text>
+  <text x="500" y="476" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#475569">string</text>
+  <text x="644" y="476" font-family="Inter, Arial, sans-serif" font-size="13" fill="#64748B">optional</text>
+  <text x="286" y="556" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" fill="#020617">Code examples</text>
+  <rect x="286" y="590" width="840" height="100" rx="14" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <rect x="286" y="590" width="840" height="38" rx="14" fill="#E2E8F0"/>
+  <circle cx="312" cy="609" r="6" fill="#F97316"/>
+  <circle cx="332" cy="609" r="6" fill="#FBBF24"/>
+  <circle cx="352" cy="609" r="6" fill="#22C55E"/>
+  <text x="382" y="614" font-family="JetBrains Mono, Consolas, monospace" font-size="13" fill="#475569">BASH</text>
+  <text x="316" y="656" font-family="JetBrains Mono, Consolas, monospace" font-size="14" fill="#2563EB">curl -X POST "https://api.nebula.dev/v2/auth/login"</text>
+  <defs>
+    <linearGradient id="accent" x1="28" y1="32" x2="70" y2="74" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6366F1"/>
+      <stop offset="1" stop-color="#D946EF"/>
+    </linearGradient>
+  </defs>
+</svg>
