@@ -24,3 +24,46 @@ html {
 section {
   scroll-margin-top: 5rem;
 }
+
+@media print {
+  @page {
+    size: A4;
+    margin: 12mm;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+
+  body {
+    background: #f7fafc;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  main {
+    background: #f7fafc !important;
+  }
+
+  section {
+    break-inside: avoid;
+    scroll-margin-top: 0;
+  }
+
+  article,
+  aside,
+  img {
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}

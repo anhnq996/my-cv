@@ -1,5 +1,5 @@
-import type { ReactNode } from "react";
 import Image from "next/image";
+import type { ReactNode } from "react";
 
 const cv = {
   name: "Ngô Quốc Anh",
@@ -233,12 +233,12 @@ export default function Home() {
       <a
         href="#top"
         aria-label="Back to top"
-        className="fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center rounded-full border border-slate-200 bg-slate-950 text-xl font-semibold text-white shadow-xl shadow-slate-900/20 transition hover:-translate-y-1 hover:bg-cyan-700"
+        className="no-print fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center rounded-full border border-slate-200 bg-slate-950 text-xl font-semibold text-white shadow-xl shadow-slate-900/20 transition hover:-translate-y-1 hover:bg-cyan-700"
       >
         ↑
       </a>
 
-      <div className="fixed inset-x-0 top-0 z-50 border-b border-white/70 bg-white/85 backdrop-blur-xl">
+      <div className="no-print fixed inset-x-0 top-0 z-50 border-b border-white/70 bg-white/85 backdrop-blur-xl">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
           <a href="#top" className="flex items-center gap-3">
             <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-cyan-500 to-violet-600 text-sm font-bold text-white shadow-lg shadow-cyan-500/20">
@@ -266,34 +266,52 @@ export default function Home() {
 
       <section id="top" className="relative overflow-hidden pt-28">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_18%_18%,rgba(6,182,212,0.18),transparent_30%),radial-gradient(circle_at_82%_8%,rgba(124,58,237,0.14),transparent_28%)]" />
-        <div className="mx-auto grid min-h-[calc(100vh-7rem)] max-w-6xl items-center gap-12 px-5 py-16 lg:grid-cols-[1.08fr_0.92fr]">
-          <div>
-            <p className="font-mono text-sm uppercase tracking-[0.28em] text-cyan-700">Fullstack Developer</p>
-            <h1 className="mt-5 max-w-3xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-7xl">
-              {cv.name}
-            </h1>
-            <p className="mt-5 text-2xl font-medium text-slate-700">{cv.focus}</p>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{cv.summary}</p>
+        <div className="mx-auto flex min-h-[calc(100vh-7rem)] max-w-4xl flex-col items-center px-5 py-16 text-center">
+          <div className="inline-flex items-center gap-2.5 rounded-full border border-slate-200 bg-white/80 px-5 py-2.5 font-mono text-xs text-slate-500 shadow-sm backdrop-blur-sm">
+            <span className="h-2 w-2 rounded-full bg-emerald-500 shadow-lg shadow-emerald-500/40" />
+            <span className="text-cyan-700">$</span>
+            <span>whoami --fullstack</span>
+          </div>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a href="#projects" className="rounded-lg bg-gradient-to-r from-cyan-600 to-violet-600 px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-cyan-500/20">
-                View Projects
-              </a>
-              <a href={`mailto:${cv.email}`} className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm hover:border-cyan-300">
-                Contact Me
-              </a>
-              <a
-                href={cv.github}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm hover:border-violet-300"
-              >
-                GitHub
-              </a>
+          <div className="relative mt-8">
+            <div className="absolute inset-[-10px] rounded-full border-2 border-dashed border-cyan-300/50" />
+            <div className="relative h-32 w-32 overflow-hidden rounded-full border-2 border-cyan-300 bg-white shadow-2xl shadow-cyan-500/20 sm:h-40 sm:w-40">
+                <Image
+                  src="/avatar.jpg"
+                  alt="Portrait of Ngô Quốc Anh"
+                  width={640}
+                  height={640}
+                  priority
+                  className="h-full w-full object-cover object-center"
+                />
             </div>
           </div>
 
-          <aside className="rounded-2xl border border-slate-200 bg-slate-950 p-5 text-slate-100 shadow-2xl shadow-slate-900/20">
+          <p className="mt-8 font-mono text-sm uppercase tracking-[0.28em] text-cyan-700">Fullstack Developer</p>
+          <h1 className="mt-5 max-w-3xl text-5xl font-semibold tracking-tight text-slate-950 sm:text-7xl">
+            {cv.name}
+          </h1>
+          <p className="mt-5 text-2xl font-medium text-slate-700">{cv.focus}</p>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600">{cv.summary}</p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <a href="#projects" className="rounded-lg bg-gradient-to-r from-cyan-600 to-violet-600 px-5 py-3 text-sm font-semibold text-white shadow-xl shadow-cyan-500/20">
+              View Projects
+            </a>
+            <a href={`mailto:${cv.email}`} className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm hover:border-cyan-300">
+              Contact Me
+            </a>
+            <a
+              href={cv.github}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-lg border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-800 shadow-sm hover:border-violet-300"
+            >
+              GitHub
+            </a>
+          </div>
+
+          <aside className="mt-12 w-full max-w-xl rounded-2xl border border-slate-200 bg-slate-950 p-5 text-left text-slate-100 shadow-2xl shadow-slate-900/20">
             <div className="mb-5 flex items-center gap-2 border-b border-slate-800 pb-4">
               <span className="h-3 w-3 rounded-full bg-red-400" />
               <span className="h-3 w-3 rounded-full bg-amber-400" />
