@@ -230,6 +230,14 @@ function Pill({ children }: { children: ReactNode }) {
 export default function Home() {
   return (
     <main className="min-h-screen bg-[#f7fafc] text-slate-900">
+      <a
+        href="#top"
+        aria-label="Back to top"
+        className="fixed bottom-6 right-6 z-50 grid h-12 w-12 place-items-center rounded-full border border-slate-200 bg-slate-950 text-xl font-semibold text-white shadow-xl shadow-slate-900/20 transition hover:-translate-y-1 hover:bg-cyan-700"
+      >
+        ↑
+      </a>
+
       <div className="fixed inset-x-0 top-0 z-50 border-b border-white/70 bg-white/85 backdrop-blur-xl">
         <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-5">
           <a href="#top" className="flex items-center gap-3">
